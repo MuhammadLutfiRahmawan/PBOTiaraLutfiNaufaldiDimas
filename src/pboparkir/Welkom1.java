@@ -29,6 +29,8 @@ public class Welkom1 extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -40,7 +42,6 @@ public class Welkom1 extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
 
@@ -49,6 +50,17 @@ public class Welkom1 extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(588, 432));
 
         jPanel1.setLayout(null);
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bismillahtubes/Bahan/mobilcilik.png"))); // NOI18N
+        jLabel9.setText("jLabel2");
+        jPanel1.add(jLabel9);
+        jLabel9.setBounds(230, 100, 40, 40);
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 47)); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bismillahtubes/Bahan/logo - Copy (2).png"))); // NOI18N
+        jLabel1.setText("P   RKING");
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(20, 70, 440, 94);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel5.setText("Tersisa : ");
@@ -103,12 +115,6 @@ public class Welkom1 extends javax.swing.JFrame {
         jLabel3.setText("v.1.0.0");
         jPanel1.add(jLabel3);
         jLabel3.setBounds(10, 410, 40, 14);
-
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bismillahtubes/Bahan/logo - Copy (2).png"))); // NOI18N
-        jLabel1.setText("PARKING");
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(20, 70, 410, 94);
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bismillahtubes/Bahan/about us.png"))); // NOI18N
         jPanel1.add(jButton2);
@@ -184,6 +190,7 @@ public class Welkom1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
