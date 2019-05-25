@@ -62,7 +62,7 @@ public class Welkom extends javax.swing.JFrame {
         jPanel1.add(jButton1);
         jButton1.setBounds(170, 240, 240, 60);
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 47)); // NOI18N
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bismillahtubes/Bahan/logo - Copy (2).png"))); // NOI18N
         jLabel1.setText("P   RKING");
         jPanel1.add(jLabel1);
