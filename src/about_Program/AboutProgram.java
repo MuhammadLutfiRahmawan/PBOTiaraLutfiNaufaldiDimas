@@ -34,8 +34,14 @@ public class AboutProgram extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         background = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -55,13 +61,40 @@ public class AboutProgram extends javax.swing.JFrame {
         background.add(jButton1);
         jButton1.setBounds(461, 324, 69, 25);
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jTextArea1.setText("\t\t\t  UMM PARKING\n\n\tUMM Parking adalah sebuah aplikasi yang memudahkan agar \nmahasiswa maupun dosen dapat mengetahui parkiran mana yang masih \ntersisa serta memudahkan mahasiswa dan dosen mengingat dimana le-\ntak kendaraan yang telah diparkir sebelumnya. UMM Parking ini me-\nminimalisir adanya tukang parkir karena menggunakan sistem peng-\ninputan nopol dan kode unik sebagai pengaman unik agar pemilik \nkendaraan dapat keluar.");
-        jScrollPane1.setViewportView(jTextArea1);
+        jLabel22.setFont(new java.awt.Font("Tahoma", 1, 47)); // NOI18N
+        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bismillahtubes/Bahan/logo - Copy (2).png"))); // NOI18N
+        jLabel22.setText("P   RKING");
+        background.add(jLabel22);
+        jLabel22.setBounds(20, 150, 440, 94);
 
-        background.add(jScrollPane1);
-        jScrollPane1.setBounds(10, 11, 530, 173);
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bismillahtubes/Bahan/mobilcilik.png"))); // NOI18N
+        jLabel2.setText("jLabel2");
+        background.add(jLabel2);
+        jLabel2.setBounds(230, 180, 40, 40);
+
+        jLabel3.setText("UMM PARKING");
+        background.add(jLabel3);
+        jLabel3.setBounds(240, 10, 90, 14);
+
+        jLabel4.setText("\tUMM Parking adalah sebuah aplikasi yang memudahkan agar mahasiswa maupun");
+        background.add(jLabel4);
+        jLabel4.setBounds(70, 40, 490, 14);
+
+        jLabel5.setText("dosen dapat mengetahui parkiran mana yang masih  tersisa serta memudahkan mahasiswa ");
+        background.add(jLabel5);
+        jLabel5.setBounds(20, 60, 550, 14);
+
+        jLabel6.setText("dan dosen mengingat dimana le- tak kendaraan yang telah diparkir sebelumnya. UMM Park-");
+        background.add(jLabel6);
+        jLabel6.setBounds(20, 80, 570, 14);
+
+        jLabel7.setText("ing ini meminimalisir adanya tukang parkir karena menggunakan sistem penginputan nopol");
+        background.add(jLabel7);
+        jLabel7.setBounds(20, 100, 590, 14);
+
+        jLabel8.setText("dan kode unik sebagai pengaman unik agar pemilik  kendaraan dapat keluar.");
+        background.add(jLabel8);
+        jLabel8.setBounds(20, 120, 460, 14);
 
         jPanel1.add(background);
         background.setBounds(20, 20, 550, 390);
@@ -135,8 +168,14 @@ public class AboutProgram extends javax.swing.JFrame {
     private javax.swing.JPanel background;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
 }
