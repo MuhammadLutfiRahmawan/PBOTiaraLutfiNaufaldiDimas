@@ -9,6 +9,7 @@ import java.awt.Color;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import pboparkir.Referance;
+import java.util.ArrayList;
 
 /**
  *
@@ -21,9 +22,11 @@ public class mainform extends javax.swing.JFrame {
      */
     int kapasitas=56;
     JPanel [] area = new JPanel[90];
-    String [] nopol = new String[100];
-    String [] kode = new String[100];
+    String  nopol;
+    String  kode;
     int index=0;
+    ArrayList<Referance> tempat = new ArrayList();
+    //Referance [] tempat = new Referance[100];
     public mainform() {
         initComponents();
     }
@@ -34,9 +37,11 @@ public class mainform extends javax.swing.JFrame {
         }
     }  
     public void parkingArea(){
-        nopol[index]=(JOptionPane.showInputDialog(null, "Masukkan nopol kendaraan Anda"));
-        kode[index]=(JOptionPane.showInputDialog(null, "Masukkan kode unik Anda"));
-        Referance [] area = new Referance[100];
+        nopol=(JOptionPane.showInputDialog(null, "Masukkan nopol kendaraan Anda"));
+        kode=(JOptionPane.showInputDialog(null, "Masukkan kode unik Anda"));
+//        Referance [] tempat = new Referance[100];
+        Referance data = new Referance(nopol, kode);
+        tempat.add(data);
         index++;
     }
     @SuppressWarnings("unchecked")
@@ -65,6 +70,7 @@ public class mainform extends javax.swing.JFrame {
         jPanel52 = new javax.swing.JPanel();
         jPanel53 = new javax.swing.JPanel();
         jPanel54 = new javax.swing.JPanel();
+        jToggleButton1 = new javax.swing.JToggleButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(588, 432));
@@ -478,6 +484,15 @@ public class mainform extends javax.swing.JFrame {
         jPanel1.add(jPanel54);
         jPanel54.setBounds(450, 100, 35, 67);
 
+        jToggleButton1.setText("jToggleButton1");
+        jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jToggleButton1);
+        jToggleButton1.setBounds(220, 230, 105, 23);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -498,7 +513,7 @@ public class mainform extends javax.swing.JFrame {
 
     private void jPanel2MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MouseReleased
         jPanel2.setBackground(Color.red);
-        //kapasitas--;
+        kapasitas--;
         parkingArea();
     }//GEN-LAST:event_jPanel2MouseReleased
 
@@ -632,6 +647,10 @@ public class mainform extends javax.swing.JFrame {
         parkingArea();
     }//GEN-LAST:event_jPanel23MouseClicked
 
+    private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
+        System.out.println(tempat);
+    }//GEN-LAST:event_jToggleButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -690,5 +709,6 @@ public class mainform extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
+    private javax.swing.JToggleButton jToggleButton1;
     // End of variables declaration//GEN-END:variables
 }

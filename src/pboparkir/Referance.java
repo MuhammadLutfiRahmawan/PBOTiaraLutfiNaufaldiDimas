@@ -15,9 +15,8 @@ public class Referance {
         this.kode=kode;
         this.nopol=nopol;
     }
-
     @Override
     public String toString() {
-        return nopol +"/"+ kode ;
+        return nopol +"/"+ kode+"|" ;
     }
 }
