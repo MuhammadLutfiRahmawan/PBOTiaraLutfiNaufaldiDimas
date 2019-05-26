@@ -32,7 +32,7 @@ public class mainform2 extends javax.swing.JFrame {
     }
     public void inisialisasiArea(){
         String panel="jpanel";
-        for(int i=2; i<59; i++){
+        for(int i=2; i<20; i++){
             
         }
     }

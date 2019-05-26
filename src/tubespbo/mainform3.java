@@ -4,6 +4,7 @@ package tubespbo;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import java.awt.Color;
+import java.util.ArrayList;
 import pboparkir.Referance;
 
 public class mainform3 extends javax.swing.JFrame {
@@ -11,23 +12,24 @@ public class mainform3 extends javax.swing.JFrame {
    
     int kapasitas=20;
     JPanel [] area = new JPanel[90];
-    String [] nopol = new String[100];
-    String [] kode = new String[100];
-    int index = 0;
+    String  nopol;
+    String  kode;
+    int index=0;
+    ArrayList<Referance> tempat = new ArrayList();
     
     public mainform3() {
         initComponents();
     }
     public void inisialisasiArea(){
         String panel="jpanel";
-        for(int i=2; i<59; i++){
-            
+        for(int i=2; i<20; i++){   
         }
     }  
     public void parkingArea(){
-        nopol[index]=(JOptionPane.showInputDialog(null, "Masukkan nopol kendaraan Anda"));
-        kode[index]=(JOptionPane.showInputDialog(null, "Masukkan kode unik Anda"));
-        Referance [] area = new Referance[100];
+        nopol=(JOptionPane.showInputDialog(null, "Masukkan nopol kendaraan Anda"));
+        kode=(JOptionPane.showInputDialog(null, "Masukkan kode unik Anda"));
+        Referance data = new Referance(nopol, kode);
+        tempat.add(data);
         index++;
     }
 
@@ -66,6 +68,12 @@ public class mainform3 extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(102, 102, 102));
 
+        jPanel14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                jPanel14MouseReleased(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
         jPanel14.setLayout(jPanel14Layout);
         jPanel14Layout.setHorizontalGroup(
@@ -87,6 +95,12 @@ public class mainform3 extends javax.swing.JFrame {
             jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 67, Short.MAX_VALUE)
         );
+
+        jPanel7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                jPanel7MouseReleased(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -110,6 +124,12 @@ public class mainform3 extends javax.swing.JFrame {
             .addGap(0, 67, Short.MAX_VALUE)
         );
 
+        jPanel18.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                jPanel18MouseReleased(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
         jPanel18.setLayout(jPanel18Layout);
         jPanel18Layout.setHorizontalGroup(
@@ -120,6 +140,12 @@ public class mainform3 extends javax.swing.JFrame {
             jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 67, Short.MAX_VALUE)
         );
+
+        jPanel19.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                jPanel19MouseReleased(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
         jPanel19.setLayout(jPanel19Layout);
@@ -132,6 +158,12 @@ public class mainform3 extends javax.swing.JFrame {
             .addGap(0, 67, Short.MAX_VALUE)
         );
 
+        jPanel20.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                jPanel20MouseReleased(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel20Layout = new javax.swing.GroupLayout(jPanel20);
         jPanel20.setLayout(jPanel20Layout);
         jPanel20Layout.setHorizontalGroup(
@@ -142,6 +174,12 @@ public class mainform3 extends javax.swing.JFrame {
             jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 67, Short.MAX_VALUE)
         );
+
+        jPanel21.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                jPanel21MouseReleased(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
         jPanel21.setLayout(jPanel21Layout);
@@ -154,6 +192,12 @@ public class mainform3 extends javax.swing.JFrame {
             .addGap(0, 67, Short.MAX_VALUE)
         );
 
+        jPanel22.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                jPanel22MouseReleased(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel22Layout = new javax.swing.GroupLayout(jPanel22);
         jPanel22.setLayout(jPanel22Layout);
         jPanel22Layout.setHorizontalGroup(
@@ -164,6 +208,12 @@ public class mainform3 extends javax.swing.JFrame {
             jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 67, Short.MAX_VALUE)
         );
+
+        jPanel23.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                jPanel23MouseReleased(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel23Layout = new javax.swing.GroupLayout(jPanel23);
         jPanel23.setLayout(jPanel23Layout);
@@ -176,6 +226,12 @@ public class mainform3 extends javax.swing.JFrame {
             .addGap(0, 67, Short.MAX_VALUE)
         );
 
+        jPanel24.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                jPanel24MouseReleased(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel24Layout = new javax.swing.GroupLayout(jPanel24);
         jPanel24.setLayout(jPanel24Layout);
         jPanel24Layout.setHorizontalGroup(
@@ -186,6 +242,12 @@ public class mainform3 extends javax.swing.JFrame {
             jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 67, Short.MAX_VALUE)
         );
+
+        jPanel25.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                jPanel25MouseReleased(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel25Layout = new javax.swing.GroupLayout(jPanel25);
         jPanel25.setLayout(jPanel25Layout);
@@ -401,6 +463,66 @@ public class mainform3 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jPanel14MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel14MouseReleased
+        // TODO add your handling code here:
+        parkingArea();
+        jPanel14.setBackground(Color.red);
+    }//GEN-LAST:event_jPanel14MouseReleased
+
+    private void jPanel7MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseReleased
+        // TODO add your handling code here:
+        parkingArea();
+        jPanel17.setBackground(Color.red);
+    }//GEN-LAST:event_jPanel7MouseReleased
+
+    private void jPanel18MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel18MouseReleased
+        // TODO add your handling code here:
+        parkingArea();
+        jPanel18.setBackground(Color.red);
+    }//GEN-LAST:event_jPanel18MouseReleased
+
+    private void jPanel19MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel19MouseReleased
+        // TODO add your handling code here:
+        parkingArea();
+        jPanel19.setBackground(Color.red);
+    }//GEN-LAST:event_jPanel19MouseReleased
+
+    private void jPanel20MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel20MouseReleased
+        // TODO add your handling code here:
+        parkingArea();
+        jPanel20.setBackground(Color.red);
+    }//GEN-LAST:event_jPanel20MouseReleased
+
+    private void jPanel21MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel21MouseReleased
+        // TODO add your handling code here:
+        parkingArea();
+        jPanel21.setBackground(Color.red);
+    }//GEN-LAST:event_jPanel21MouseReleased
+
+    private void jPanel22MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel22MouseReleased
+        // TODO add your handling code here:
+        parkingArea();
+        jPanel22.setBackground(Color.red);
+    }//GEN-LAST:event_jPanel22MouseReleased
+
+    private void jPanel23MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel23MouseReleased
+        // TODO add your handling code here:
+        parkingArea();
+        jPanel23.setBackground(Color.red);
+    }//GEN-LAST:event_jPanel23MouseReleased
+
+    private void jPanel24MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel24MouseReleased
+        // TODO add your handling code here:
+        parkingArea();
+        jPanel24.setBackground(Color.red);
+    }//GEN-LAST:event_jPanel24MouseReleased
+
+    private void jPanel25MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel25MouseReleased
+        // TODO add your handling code here:
+        parkingArea();
+        jPanel25.setBackground(Color.red);
+    }//GEN-LAST:event_jPanel25MouseReleased
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
