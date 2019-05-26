@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package pboparkir;
-import aboutUs.AboutUs;
+import about_Us.AboutUs;
 /**
  *
  * @author asus

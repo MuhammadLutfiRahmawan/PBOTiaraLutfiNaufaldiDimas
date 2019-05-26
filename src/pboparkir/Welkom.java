@@ -5,7 +5,7 @@
  */
 
 package pboparkir;
-import aboutUs.AboutUs;
+import about_Us.AboutUs;
 
 /**
  *

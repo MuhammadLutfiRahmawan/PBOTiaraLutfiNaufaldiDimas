@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package aboutUs;
+package about_Us;
 import pboparkir.Welkom;
 import java.awt.Color;
 
@@ -68,6 +68,10 @@ public class AboutUs extends javax.swing.JFrame {
 
         jLabel6.setText("No Telp   : 082232507662");
 
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/about_Us/WhatsApp Image 2019-05-10 at 12.18.06.jpeg"))); // NOI18N
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/about_Us/Luthfi.jpg"))); // NOI18N
+
         jLabel7.setText("Nama      : Muhammad Luthfi Rahmawan");
 
         jLabel9.setText("NIM         : 201810370311238");
@@ -76,6 +80,8 @@ public class AboutUs extends javax.swing.JFrame {
 
         jLabel11.setText("No Telp    : 082141128181");
 
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/about_Us/ijad.jpg"))); // NOI18N
+
         jLabel13.setText("Nama       : Naufaldi Izad Firmana");
 
         jLabel14.setText("NIM          : 201810370311255");
@@ -83,6 +89,8 @@ public class AboutUs extends javax.swing.JFrame {
         jLabel15.setText("TTL          : Nganjuk, 17 Mei 2000");
 
         jLabel16.setText("No Telp    : 082142285450");
+
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/about_Us/dimas asu.jpg"))); // NOI18N
 
         jLabel18.setText("Nama       : Dhimas Yuannugra Pratama");
 
@@ -131,7 +139,7 @@ public class AboutUs extends javax.swing.JFrame {
                             .addComponent(jLabel19)
                             .addComponent(jLabel20)
                             .addComponent(jLabel21))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 147, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 167, Short.MAX_VALUE)
                         .addComponent(jButton1)
                         .addGap(21, 21, 21))
                     .addGroup(backgroundLayout.createSequentialGroup()
@@ -196,8 +204,9 @@ public class AboutUs extends javax.swing.JFrame {
         );
 
         jPanel1.add(background);
-        background.setBounds(20, 20, 530, 390);
+        background.setBounds(20, 20, 550, 390);
 
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Pictures\\Background-kapoci.jpg")); // NOI18N
         jLabel1.setText("jLabel1");
         jLabel1.setPreferredSize(new java.awt.Dimension(588, 423));
         jPanel1.add(jLabel1);
