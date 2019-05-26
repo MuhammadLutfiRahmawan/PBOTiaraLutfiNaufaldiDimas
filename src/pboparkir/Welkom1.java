@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package pboparkir;
-
+import aboutUs.AboutUs;
 /**
  *
  * @author asus
@@ -147,6 +147,11 @@ public class Welkom1 extends javax.swing.JFrame {
         jLabel3.setBounds(10, 410, 40, 14);
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bismillahtubes/Bahan/about us.png"))); // NOI18N
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton2);
         jButton2.setBounds(500, 20, 70, 30);
 
@@ -168,6 +173,13 @@ public class Welkom1 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        AboutUs about = new AboutUs();
+        about.setVisible(true);
+        about.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
