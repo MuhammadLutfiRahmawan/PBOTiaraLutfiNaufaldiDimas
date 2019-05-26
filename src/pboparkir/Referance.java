@@ -11,20 +11,13 @@ package pboparkir;
  */
 public class Referance {
     String nopol, kode;
-
-    public String getNopol() {
-        return nopol;
+    public Referance(String nopol, String kode){
+        this.kode=kode;
+        this.nopol=nopol;
     }
 
-    public void setNopol(String nopol) {
-        this.nopol = nopol;
-    }
-
-    public String getKode() {
-        return kode;
-    }
-
-    public void setKode(String kode) {
-        this.kode = kode;
+    @Override
+    public String toString() {
+        return nopol +"/"+ kode ;
     }
 }
