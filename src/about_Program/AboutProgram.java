@@ -34,6 +34,8 @@ public class AboutProgram extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         background = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -52,6 +54,14 @@ public class AboutProgram extends javax.swing.JFrame {
         });
         background.add(jButton1);
         jButton1.setBounds(461, 324, 69, 25);
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jTextArea1.setText("\t\t\t  UMM PARKING\n\n\tUMM Parking adalah sebuah aplikasi yang memudahkan agar \nmahasiswa maupun dosen dapat mengetahui parkiran mana yang masih \ntersisa serta memudahkan mahasiswa dan dosen mengingat dimana le-\ntak kendaraan yang telah diparkir sebelumnya. UMM Parking ini me-\nminimalisir adanya tukang parkir karena menggunakan sistem peng-\ninputan nopol dan kode unik sebagai pengaman unik agar pemilik \nkendaraan dapat keluar.");
+        jScrollPane1.setViewportView(jTextArea1);
+
+        background.add(jScrollPane1);
+        jScrollPane1.setBounds(10, 11, 530, 173);
 
         jPanel1.add(background);
         background.setBounds(20, 20, 550, 390);
@@ -126,5 +136,7 @@ public class AboutProgram extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
 }
