@@ -20,7 +20,7 @@ public class mainform extends javax.swing.JFrame {
     /**
      * Creates new form mainform
      */
-    int kapasitas=56;
+    int kapasitas=20;
     JPanel [] area = new JPanel[90];
     String  nopol;
     String  kode;
@@ -512,139 +512,159 @@ public class mainform extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jPanel2MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MouseReleased
+        parkingArea();
         jPanel2.setBackground(Color.red);
         kapasitas--;
-        parkingArea();
+        
     }//GEN-LAST:event_jPanel2MouseReleased
 
     private void jPanel4MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseReleased
+        parkingArea();
         jPanel4.setBackground(Color.red);
         kapasitas--;
-        parkingArea();
+        
     }//GEN-LAST:event_jPanel4MouseReleased
 
     private void jPanel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseClicked
+        parkingArea();
         jPanel3.setBackground(Color.red);
         kapasitas--;
-        parkingArea();
+        
     }//GEN-LAST:event_jPanel3MouseClicked
 
     private void jPanel48MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel48MouseClicked
+        parkingArea();
         jPanel48.setBackground(Color.red);
         kapasitas--;
-        parkingArea();
+        
     }//GEN-LAST:event_jPanel48MouseClicked
 
     private void jPanel49MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel49MouseClicked
         // TODO add your handling code here:
+        parkingArea();
         jPanel49.setBackground(Color.red);
         kapasitas--;
-        parkingArea();
+        
     }//GEN-LAST:event_jPanel49MouseClicked
 
     private void jPanel50MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel50MouseClicked
         // TODO add your handling code here:
+        parkingArea();
         jPanel50.setBackground(Color.red);;
         kapasitas--;
-        parkingArea();
+        
     }//GEN-LAST:event_jPanel50MouseClicked
 
     private void jPanel51MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel51MouseClicked
         // TODO add your handling code here:
+        parkingArea();
         jPanel51.setBackground(Color.red);
         kapasitas--;
-        parkingArea();
+        
     }//GEN-LAST:event_jPanel51MouseClicked
 
     private void jPanel52MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel52MouseClicked
         // TODO add your handling code here:
+        parkingArea();
         jPanel52.setBackground(Color.red);
         kapasitas--;
-        parkingArea();
+        
     }//GEN-LAST:event_jPanel52MouseClicked
 
     private void jPanel53MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel53MouseClicked
         // TODO add your handling code here:
+        parkingArea();
         jPanel53.setBackground(Color.red);
         kapasitas--;
-        parkingArea();
+        
     }//GEN-LAST:event_jPanel53MouseClicked
 
     private void jPanel54MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel54MouseClicked
         // TODO add your handling code here:
+        parkingArea();
         jPanel54.setBackground(Color.red);
         kapasitas--;
-        parkingArea();
+        
     }//GEN-LAST:event_jPanel54MouseClicked
 
     private void jPanel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseClicked
         // TODO add your handling code here:
+        parkingArea();
         jPanel6.setBackground(Color.red);
         kapasitas--;
-        parkingArea();
+        
     }//GEN-LAST:event_jPanel6MouseClicked
 
     private void jPanel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseClicked
         // TODO add your handling code here:
+        parkingArea();
         jPanel18.setBackground(Color.red);
         kapasitas--;
-        parkingArea();
+        
     }//GEN-LAST:event_jPanel8MouseClicked
 
     private void jPanel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel14MouseClicked
         // TODO add your handling code here:
+        parkingArea();
         jPanel14.setBackground(Color.red);
         kapasitas--;
-        parkingArea();
+        
     }//GEN-LAST:event_jPanel14MouseClicked
 
     private void jPanel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseClicked
         // TODO add your handling code here:
+        parkingArea();
         jPanel7.setBackground(Color.red);
         kapasitas--;
-        parkingArea();
+        
     }//GEN-LAST:event_jPanel7MouseClicked
 
     private void jPanel18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel18MouseClicked
         // TODO add your handling code here:
+        parkingArea();
         jPanel18.setBackground(Color.red);
         kapasitas--;
-        parkingArea();
+        
     }//GEN-LAST:event_jPanel18MouseClicked
 
     private void jPanel19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel19MouseClicked
         // TODO add your handling code here:
+        parkingArea();
         jPanel19.setBackground(Color.red);
         kapasitas--;
-        parkingArea();
+        
     }//GEN-LAST:event_jPanel19MouseClicked
 
     private void jPanel20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel20MouseClicked
         // TODO add your handling code here:
+        parkingArea();
         jPanel20.setBackground(Color.red);
         kapasitas--;
-        parkingArea();
+        
     }//GEN-LAST:event_jPanel20MouseClicked
 
     private void jPanel21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel21MouseClicked
         // TODO add your handling code here:
+        parkingArea();
         jPanel21.setBackground(Color.red);
         kapasitas--;
-        parkingArea();
+        
     }//GEN-LAST:event_jPanel21MouseClicked
 
     private void jPanel22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel22MouseClicked
         // TODO add your handling code here:
+        parkingArea();
         jPanel22.setBackground(Color.red);
         kapasitas--;
-        parkingArea();
+        
     }//GEN-LAST:event_jPanel22MouseClicked
 
     private void jPanel23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel23MouseClicked
         // TODO add your handling code here:
+        parkingArea();
         jPanel23.setBackground(Color.red);
         kapasitas--;
-        parkingArea();
+        
     }//GEN-LAST:event_jPanel23MouseClicked
 
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed

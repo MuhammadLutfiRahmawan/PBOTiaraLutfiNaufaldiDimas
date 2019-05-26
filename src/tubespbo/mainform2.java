@@ -6,8 +6,10 @@
 package tubespbo;
 
 import java.awt.Color;
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import pboparkir.Referance;
 
 /**
  *
@@ -18,10 +20,12 @@ public class mainform2 extends javax.swing.JFrame {
     /**
      * Creates new form mainform2
      */
-    int kapasitas=56;
+    int kapasitas=20;
     JPanel [] area = new JPanel[90];
-    String [] nopol = new String[100];
-    String [] kode = new String[100];
+    String  nopol;
+    String  kode;
+    int index=0;
+    ArrayList<Referance> tempat = new ArrayList();
        
     public mainform2() {
         initComponents();
@@ -32,9 +36,14 @@ public class mainform2 extends javax.swing.JFrame {
             
         }
     }
+ 
     public void parkingArea(){
-        nopol[0]=(JOptionPane.showInputDialog(null, "Masukkan nopol kendaraan Anda"));
-        kode[0]=(JOptionPane.showInputDialog(null, "Masukkan kode unik Anda"));
+        nopol=(JOptionPane.showInputDialog(null, "Masukkan nopol kendaraan Anda"));
+        kode=(JOptionPane.showInputDialog(null, "Masukkan kode unik Anda"));
+//        Referance [] tempat = new Referance[100];
+        Referance data = new Referance(nopol, kode);
+        tempat.add(data);
+        index++;
     }
     
 
@@ -1475,50 +1484,58 @@ public class mainform2 extends javax.swing.JFrame {
 
     private void jPanel59MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel59MouseReleased
         // TODO add your handling code here:
-        jPanel59.setBackground(Color.red);
         parkingArea();
+        jPanel59.setBackground(Color.red);
+        
     }//GEN-LAST:event_jPanel59MouseReleased
 
     private void jPanel60MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel60MouseReleased
         // TODO add your handling code here:
-        jPanel60.setBackground(Color.red);
         parkingArea();
+        jPanel60.setBackground(Color.red);
+        
     }//GEN-LAST:event_jPanel60MouseReleased
 
     private void jPanel61MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel61MouseReleased
         // TODO add your handling code here:
-        jPanel61.setBackground(Color.red);
         parkingArea();
+        jPanel61.setBackground(Color.red);
+        
     }//GEN-LAST:event_jPanel61MouseReleased
 
     private void jPanel104MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel104MouseReleased
         // TODO add your handling code here:
-        jPanel104.setBackground(Color.red);
         parkingArea();
+        jPanel104.setBackground(Color.red);
+        
     }//GEN-LAST:event_jPanel104MouseReleased
 
     private void jPanel105MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel105MouseReleased
         // TODO add your handling code here:
-        jPanel105.setBackground(Color.red);
         parkingArea();
+        jPanel105.setBackground(Color.red);
+        
     }//GEN-LAST:event_jPanel105MouseReleased
 
     private void jPanel106MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel106MouseReleased
         // TODO add your handling code here:
-        jPanel106.setBackground(Color.red);
         parkingArea();
+        jPanel106.setBackground(Color.red);
+        
     }//GEN-LAST:event_jPanel106MouseReleased
 
     private void jPanel107MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel107MouseReleased
         // TODO add your handling code here:
-        jPanel107.setBackground(Color.red);
         parkingArea();
+        jPanel107.setBackground(Color.red);
+        
     }//GEN-LAST:event_jPanel107MouseReleased
 
     private void jPanel108MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel108MouseReleased
         // TODO add your handling code here:
-        jPanel108.setBackground(Color.red);
         parkingArea();
+        jPanel108.setBackground(Color.red);
+        
     }//GEN-LAST:event_jPanel108MouseReleased
 
     private void jPanel109MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel109MouseReleased
@@ -1529,26 +1546,30 @@ public class mainform2 extends javax.swing.JFrame {
 
     private void jPanel110MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel110MouseReleased
         // TODO add your handling code here:
-        jPanel10.setBackground(Color.red);
         parkingArea();
+        jPanel10.setBackground(Color.red);
+        
     }//GEN-LAST:event_jPanel110MouseReleased
 
     private void jPanel65MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel65MouseReleased
         // TODO add your handling code here:
-        jPanel65.setBackground(Color.red);
         parkingArea();
+        jPanel65.setBackground(Color.red);
+        
     }//GEN-LAST:event_jPanel65MouseReleased
 
     private void jPanel67MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel67MouseReleased
         // TODO add your handling code here:
-        jPanel67.setBackground(Color.red);
         parkingArea();
+        jPanel67.setBackground(Color.red);
+        
     }//GEN-LAST:event_jPanel67MouseReleased
 
     private void jPanel70MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel70MouseReleased
         // TODO add your handling code here:
-        jPanel70.setBackground(Color.red);
         parkingArea();
+        jPanel70.setBackground(Color.red);
+        
     }//GEN-LAST:event_jPanel70MouseReleased
 
     private void jPanel73MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel73MouseReleased
@@ -1559,38 +1580,44 @@ public class mainform2 extends javax.swing.JFrame {
 
     private void jPanel83MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel83MouseReleased
         // TODO add your handling code here:
-        jPanel83.setBackground(Color.red);
         parkingArea();
+        jPanel83.setBackground(Color.red);
+        
     }//GEN-LAST:event_jPanel83MouseReleased
 
     private void jPanel84MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel84MouseReleased
         // TODO add your handling code here:
-        jPanel84.setBackground(Color.red);
         parkingArea();
+        jPanel84.setBackground(Color.red);
+        
     }//GEN-LAST:event_jPanel84MouseReleased
 
     private void jPanel85MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel85MouseReleased
         // TODO add your handling code here:
-        jPanel85.setBackground(Color.red);
         parkingArea();
+        jPanel85.setBackground(Color.red);
+        
     }//GEN-LAST:event_jPanel85MouseReleased
 
     private void jPanel86MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel86MouseReleased
         // TODO add your handling code here:
+        parkingArea();
         jPanel86.setBackground(Color.red);
-       parkingArea();
+       
     }//GEN-LAST:event_jPanel86MouseReleased
 
     private void jPanel87MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel87MouseReleased
         // TODO add your handling code here:
-        jPanel87.setBackground(Color.red);
         parkingArea();
+        jPanel87.setBackground(Color.red);
+        
     }//GEN-LAST:event_jPanel87MouseReleased
 
     private void jPanel88MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel88MouseReleased
         // TODO add your handling code here:
+        parkingArea();
         jPanel88.setBackground(Color.red);
-       parkingArea();
+       
     }//GEN-LAST:event_jPanel88MouseReleased
 
     /**
