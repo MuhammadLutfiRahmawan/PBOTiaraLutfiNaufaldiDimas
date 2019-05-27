@@ -32,7 +32,7 @@ public class mainform extends javax.swing.JFrame {
     }
     public void inisialisasiArea(){
         String panel="jpanel";
-        for(int i=2; i<59; i++){
+        for(int i=2; i<20; i++){
             
         }
     }  
@@ -484,14 +484,14 @@ public class mainform extends javax.swing.JFrame {
         jPanel1.add(jPanel54);
         jPanel54.setBounds(450, 100, 35, 67);
 
-        jToggleButton1.setText("jToggleButton1");
+        jToggleButton1.setText("check");
         jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jToggleButton1ActionPerformed(evt);
             }
         });
         jPanel1.add(jToggleButton1);
-        jToggleButton1.setBounds(220, 230, 105, 23);
+        jToggleButton1.setBounds(220, 230, 59, 23);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

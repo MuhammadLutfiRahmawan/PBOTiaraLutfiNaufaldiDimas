@@ -6,6 +6,7 @@
 package about_Us;
 import pboparkir.Welkom;
 import java.awt.Color;
+import about_Program.AboutProgram;
 
 /**
  *
@@ -111,6 +112,11 @@ public class AboutUs extends javax.swing.JFrame {
 
         jButton2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton2.setText("About Program");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout backgroundLayout = new javax.swing.GroupLayout(background);
         background.setLayout(backgroundLayout);
@@ -253,6 +259,13 @@ public class AboutUs extends javax.swing.JFrame {
         home.setLocationRelativeTo(null);
         this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+         AboutProgram prog = new AboutProgram();
+         prog.setVisible (true);
+         prog.setLocationRelativeTo(null);
+         this.dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
