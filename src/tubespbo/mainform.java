@@ -24,6 +24,7 @@ public class mainform extends javax.swing.JFrame {
     JPanel [] area = new JPanel[90];
     String  nopol;
     String  kode;
+    String alamat = "src/dataPengunjung/ParkingArea1";
     int index=0;
     ArrayList<Referance> tempat = new ArrayList();
     //Referance [] tempat = new Referance[100];
@@ -43,6 +44,7 @@ public class mainform extends javax.swing.JFrame {
         Referance data = new Referance(nopol, kode);
         tempat.add(data);
         index++;
+        tulisTxt tulis = new tulisTxt(tempat, alamat);
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -491,7 +493,7 @@ public class mainform extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jToggleButton1);
-        jToggleButton1.setBounds(220, 230, 59, 23);
+        jToggleButton1.setBounds(490, 400, 59, 23);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

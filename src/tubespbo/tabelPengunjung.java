@@ -59,7 +59,7 @@ public class tabelPengunjung extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
 
         jPanel2.add(jScrollPane1);
-        jScrollPane1.setBounds(60, 70, 454, 260);
+        jScrollPane1.setBounds(60, 70, 452, 260);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/about_Us/Background-kapoci.jpg"))); // NOI18N
         jPanel2.add(jLabel2);
@@ -80,7 +80,7 @@ public class tabelPengunjung extends javax.swing.JFrame {
         jScrollPane2.setViewportView(jTable2);
 
         jPanel3.add(jScrollPane2);
-        jScrollPane2.setBounds(60, 70, 454, 260);
+        jScrollPane2.setBounds(60, 70, 452, 260);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/about_Us/Background-kapoci.jpg"))); // NOI18N
         jPanel3.add(jLabel1);
@@ -101,7 +101,7 @@ public class tabelPengunjung extends javax.swing.JFrame {
         jScrollPane3.setViewportView(jTable3);
 
         jPanel4.add(jScrollPane3);
-        jScrollPane3.setBounds(60, 70, 454, 260);
+        jScrollPane3.setBounds(60, 70, 452, 260);
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/about_Us/Background-kapoci.jpg"))); // NOI18N
         jPanel4.add(jLabel3);
@@ -113,7 +113,7 @@ public class tabelPengunjung extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1)
+            .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 588, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
