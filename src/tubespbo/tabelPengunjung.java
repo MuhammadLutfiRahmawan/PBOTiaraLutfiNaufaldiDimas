@@ -5,6 +5,11 @@
  */
 package tubespbo;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author laptop
@@ -14,8 +19,71 @@ public class tabelPengunjung extends javax.swing.JFrame {
     /**
      * Creates new form tabelPengunjung
      */
+    DefaultTableModel tabel1;
+    DefaultTableModel tabel2;
+    DefaultTableModel tabel3;
+    BufferedReader baca1;
+    BufferedReader baca2;
+    BufferedReader baca3;
+//    String address1;
+//    String address2;
+//    String address3;
     public tabelPengunjung() {
         initComponents();
+        tabel1=(DefaultTableModel)tabelPakir1.getModel();
+        tabel2=(DefaultTableModel)tabelParkir2.getModel();
+        tabel3=(DefaultTableModel)tabelParkir3.getModel();
+        loadData1();
+        loadData2();
+        loadData3();
+    }
+    public void loadData1(){
+        mainform p1 = new mainform();
+        String address =p1.alamat;
+        tabel1.getDataVector().removeAllElements();
+        File file = new  File(address);
+        try {
+            baca1 = new BufferedReader(new FileReader(file));
+            Object[] dataBaris = baca1.lines().toArray();
+            for(int i=0;i<dataBaris.length;i++){
+                String baris = dataBaris[i].toString();
+                String[] data = baris.split("/");
+                tabel1.addRow(data);
+            }
+        } catch (Exception e) {
+        }
+    }
+    public void loadData2(){
+        mainform2 p2 = new mainform2();
+        String address =p2.alamat;
+        tabel2.getDataVector().removeAllElements();
+        File file = new  File(address);
+        try {
+            baca2 = new BufferedReader(new FileReader(file));
+            Object[] dataBaris = baca2.lines().toArray();
+            for(int i=0;i<dataBaris.length;i++){
+                String baris = dataBaris[i].toString();
+                String[] data = baris.split("/");
+                tabel2.addRow(data);
+            }
+        } catch (Exception e) {
+        }
+    }
+    public void loadData3(){
+        mainform3 p3 = new mainform3();
+        String address =p3.alamat;
+        tabel3.getDataVector().removeAllElements();
+        File file = new  File(address);
+        try {
+            baca3 = new BufferedReader(new FileReader(file));
+            Object[] dataBaris = baca3.lines().toArray();
+            for(int i=0;i<dataBaris.length;i++){
+                String baris = dataBaris[i].toString();
+                String[] data = baris.split("/");
+                tabel3.addRow(data);
+            }
+        } catch (Exception e) {
+        }
     }
 
     /**
@@ -31,35 +99,34 @@ public class tabelPengunjung extends javax.swing.JFrame {
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel2 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tabelPakir1 = new javax.swing.JTable();
         jLabel2 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTable2 = new javax.swing.JTable();
+        tabelParkir2 = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jScrollPane3 = new javax.swing.JScrollPane();
-        jTable3 = new javax.swing.JTable();
+        tabelParkir3 = new javax.swing.JTable();
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(588, 432));
-        setPreferredSize(new java.awt.Dimension(588, 432));
 
         jPanel2.setLayout(null);
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tabelPakir1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "Posisi", "Nopol", "Kode Unik"
+                "Nopol", "Kode Unik"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(tabelPakir1);
 
         jPanel2.add(jScrollPane1);
-        jScrollPane1.setBounds(60, 70, 452, 260);
+        jScrollPane1.setBounds(60, 70, 454, 260);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/about_Us/Background-kapoci.jpg"))); // NOI18N
         jPanel2.add(jLabel2);
@@ -69,18 +136,18 @@ public class tabelPengunjung extends javax.swing.JFrame {
 
         jPanel3.setLayout(null);
 
-        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+        tabelParkir2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "Posisi", "Nopol", "Kode Unik"
+                "Nopol", "Kode Unik"
             }
         ));
-        jScrollPane2.setViewportView(jTable2);
+        jScrollPane2.setViewportView(tabelParkir2);
 
         jPanel3.add(jScrollPane2);
-        jScrollPane2.setBounds(60, 70, 452, 260);
+        jScrollPane2.setBounds(60, 70, 454, 260);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/about_Us/Background-kapoci.jpg"))); // NOI18N
         jPanel3.add(jLabel1);
@@ -90,18 +157,18 @@ public class tabelPengunjung extends javax.swing.JFrame {
 
         jPanel4.setLayout(null);
 
-        jTable3.setModel(new javax.swing.table.DefaultTableModel(
+        tabelParkir3.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "Posisi", "Nopol", "Kode Unik"
+                "Nopol", "Kode Unik"
             }
         ));
-        jScrollPane3.setViewportView(jTable3);
+        jScrollPane3.setViewportView(tabelParkir3);
 
         jPanel4.add(jScrollPane3);
-        jScrollPane3.setBounds(60, 70, 452, 260);
+        jScrollPane3.setBounds(60, 70, 454, 260);
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/about_Us/Background-kapoci.jpg"))); // NOI18N
         jPanel4.add(jLabel3);
@@ -113,11 +180,11 @@ public class tabelPengunjung extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 588, Short.MAX_VALUE)
+            .addComponent(jTabbedPane1)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 432, Short.MAX_VALUE)
+            .addComponent(jTabbedPane1, javax.swing.GroupLayout.Alignment.TRAILING)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -181,8 +248,8 @@ public class tabelPengunjung extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTable jTable2;
-    private javax.swing.JTable jTable3;
+    private javax.swing.JTable tabelPakir1;
+    private javax.swing.JTable tabelParkir2;
+    private javax.swing.JTable tabelParkir3;
     // End of variables declaration//GEN-END:variables
 }

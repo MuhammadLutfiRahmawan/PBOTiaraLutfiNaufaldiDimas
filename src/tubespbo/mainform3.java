@@ -16,6 +16,7 @@ public class mainform3 extends javax.swing.JFrame {
     String  nopol;
     String  kode;
     int index=0;
+    public String alamat = "src/dataPengunjung/ParkingArea3.txt";
     ArrayList<Referance> tempat = new ArrayList();
     
     public mainform3() {
@@ -27,7 +28,6 @@ public class mainform3 extends javax.swing.JFrame {
         }
     }  
     public void parkingArea(){
-        String alamat = "src/dataPengunjung/ParkingArea3.txt";
         tulisTxt save = new tulisTxt(tempat, alamat);
         save.parkingArea();
     }

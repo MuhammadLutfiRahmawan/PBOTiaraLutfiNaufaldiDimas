@@ -25,6 +25,7 @@ public class mainform2 extends javax.swing.JFrame {
     JPanel [] area = new JPanel[90];
     String  nopol;
     String  kode;
+    public String alamat = "src/dataPengunjung/ParkingArea2.txt";
     int index=0;
     ArrayList<Referance> tempat = new ArrayList();
        
@@ -39,7 +40,6 @@ public class mainform2 extends javax.swing.JFrame {
     }
  
     public void parkingArea(){
-        String alamat = "src/dataPengunjung/ParkingArea2.txt";
         tulisTxt save = new tulisTxt(tempat, alamat);
         save.parkingArea();
     }

@@ -5,9 +5,11 @@
  */
 package pboparkir;
 import about_Us.AboutUs;
+import javax.swing.JOptionPane;
 import tubespbo.mainform;
 import tubespbo.mainform2;
 import tubespbo.mainform3;
+import tubespbo.tabelPengunjung;
 /**
  *
  * @author asus
@@ -32,6 +34,7 @@ public class Welkom1 extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
         jLabel12 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
@@ -52,6 +55,15 @@ public class Welkom1 extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(588, 432));
 
         jPanel1.setLayout(null);
+
+        jButton1.setText(" Data Pengunjung");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1);
+        jButton1.setBounds(415, 383, 140, 30);
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel12.setText("-");
@@ -184,6 +196,14 @@ public class Welkom1 extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jButton5ActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+//        String input = JOptionPane.showInputDialog("Password pengelola");
+        tabelPengunjung tabel = new tabelPengunjung();
+            tabel.setVisible(true);
+            tabel.setLocationRelativeTo(null);
+            this.dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -221,6 +241,7 @@ public class Welkom1 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;

@@ -25,7 +25,7 @@ public class mainform extends javax.swing.JFrame {
     JPanel [] area = new JPanel[90];
     String  nopol;
     String  kode;
-    String alamat = "src/dataPengunjung/ParkingArea1";
+    public String alamat = "src/dataPengunjung/ParkingArea1";
     int index=0;
     ArrayList<Referance> tempat = new ArrayList();
     //Referance [] tempat = new Referance[100];
@@ -39,7 +39,6 @@ public class mainform extends javax.swing.JFrame {
         }
     }  
     public void parkingArea(){
-        String alamat = "src/dataPengunjung/ParkingArea1.txt";
         tulisTxt save = new tulisTxt(tempat, alamat);
         save.parkingArea();
 //        nopol=(JOptionPane.showInputDialog(null, "Masukkan nopol kendaraan Anda"));
