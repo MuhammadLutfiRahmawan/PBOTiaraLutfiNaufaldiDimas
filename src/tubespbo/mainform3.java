@@ -26,11 +26,9 @@ public class mainform3 extends javax.swing.JFrame {
         }
     }  
     public void parkingArea(){
-        nopol=(JOptionPane.showInputDialog(null, "Masukkan nopol kendaraan Anda"));
-        kode=(JOptionPane.showInputDialog(null, "Masukkan kode unik Anda"));
-        Referance data = new Referance(nopol, kode);
-        tempat.add(data);
-        index++;
+        String alamat = "src/dataPengunjung/ParkingArea3.txt";
+        tulisTxt save = new tulisTxt(tempat, alamat);
+        save.parkingArea();
     }
 
    
@@ -85,6 +83,12 @@ public class mainform3 extends javax.swing.JFrame {
             .addGap(0, 67, Short.MAX_VALUE)
         );
 
+        jPanel17.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                jPanel17MouseReleased(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
         jPanel17.setLayout(jPanel17Layout);
         jPanel17Layout.setHorizontalGroup(
@@ -112,6 +116,12 @@ public class mainform3 extends javax.swing.JFrame {
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 67, Short.MAX_VALUE)
         );
+
+        jPanel9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                jPanel9MouseReleased(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
@@ -523,6 +533,14 @@ public class mainform3 extends javax.swing.JFrame {
         parkingArea();
         jPanel25.setBackground(Color.red);
     }//GEN-LAST:event_jPanel25MouseReleased
+
+    private void jPanel17MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel17MouseReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanel17MouseReleased
+
+    private void jPanel9MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel9MouseReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanel9MouseReleased
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */

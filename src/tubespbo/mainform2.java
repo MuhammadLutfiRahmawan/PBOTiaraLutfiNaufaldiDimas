@@ -38,12 +38,9 @@ public class mainform2 extends javax.swing.JFrame {
     }
  
     public void parkingArea(){
-        nopol=(JOptionPane.showInputDialog(null, "Masukkan nopol kendaraan Anda"));
-        kode=(JOptionPane.showInputDialog(null, "Masukkan kode unik Anda"));
-//        Referance [] tempat = new Referance[100];
-        Referance data = new Referance(nopol, kode);
-        tempat.add(data);
-        index++;
+        String alamat = "src/dataPengunjung/ParkingArea2.txt";
+        tulisTxt save = new tulisTxt(tempat, alamat);
+        save.parkingArea();
     }
     
 

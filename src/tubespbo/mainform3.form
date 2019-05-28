@@ -188,6 +188,9 @@
           </Layout>
         </Container>
         <Container class="javax.swing.JPanel" name="jPanel17">
+          <Events>
+            <EventHandler event="mouseReleased" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jPanel17MouseReleased"/>
+          </Events>
 
           <Layout>
             <DimensionLayout dim="0">
@@ -221,6 +224,9 @@
           </Layout>
         </Container>
         <Container class="javax.swing.JPanel" name="jPanel9">
+          <Events>
+            <EventHandler event="mouseReleased" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jPanel9MouseReleased"/>
+          </Events>
 
           <Layout>
             <DimensionLayout dim="0">
