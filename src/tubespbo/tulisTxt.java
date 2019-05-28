@@ -21,6 +21,7 @@ public class tulisTxt {
     String address;
     ArrayList<Referance> tempat = new ArrayList();
     int index=0;
+    BufferedWriter tulis;
     public tulisTxt (ArrayList tempat, String alamat){
         this.tempat=tempat;
         this.address=alamat;
@@ -39,5 +40,17 @@ public class tulisTxt {
         this.tempat=tempat;
         this.address=address;
         Object [] data = tempat.toArray();
+        
+        File file = new File (address);
+        try {
+            tulis = new BufferedWriter(new FileWriter(file));
+            for ( int i=0 ; i< data.length ; i++){
+                tulis.write(data[i].toString());
+                tulis.newLine();
+            }
+            tulis.close();
+        } catch (Exception e) {
+        }
+        
     }
 }
