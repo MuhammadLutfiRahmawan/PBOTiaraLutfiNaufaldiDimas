@@ -7,8 +7,3 @@ Anggota kelompok:
 4. Dhimas Yuanugra Pratama   (255)
 
 "Program Pemesanan Area Parkir"
-
-
-
-
-*maaf ada kesalahan teknis, kami salah melakukan push, seharusnya push ke link git Muhammad Lutfi tapi keliru push di link Tiara Intana (push di fork probadi)
