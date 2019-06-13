@@ -25,9 +25,9 @@ public class mainform extends javax.swing.JFrame {
     JPanel [] area = new JPanel[90];
     String  nopol;
     String  kode;
-    public String alamat = "src/dataPengunjung/ParkingArea1";
+    public String alamat = "src/dataPengunjung/ParkingArea1.txt";
     int index=0;
-    ArrayList<Referance> tempat = new ArrayList();
+    public ArrayList<Referance> tempatParkir1 = new ArrayList();
     //Referance [] tempat = new Referance[100];
     public mainform() {
         initComponents();
@@ -39,7 +39,7 @@ public class mainform extends javax.swing.JFrame {
         }
     }  
     public void parkingArea(){
-        tulisTxt save = new tulisTxt(tempat, alamat);
+        tulisTxt save = new tulisTxt(tempatParkir1, alamat);
         save.parkingArea();
 //        nopol=(JOptionPane.showInputDialog(null, "Masukkan nopol kendaraan Anda"));
 //        kode=(JOptionPane.showInputDialog(null, "Masukkan kode unik Anda"));
@@ -75,7 +75,6 @@ public class mainform extends javax.swing.JFrame {
         jPanel52 = new javax.swing.JPanel();
         jPanel53 = new javax.swing.JPanel();
         jPanel54 = new javax.swing.JPanel();
-        jToggleButton1 = new javax.swing.JToggleButton();
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -490,15 +489,6 @@ public class mainform extends javax.swing.JFrame {
         jPanel1.add(jPanel54);
         jPanel54.setBounds(450, 100, 35, 67);
 
-        jToggleButton1.setText("check");
-        jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jToggleButton1ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jToggleButton1);
-        jToggleButton1.setBounds(490, 400, 70, 23);
-
         jButton1.setText("HOME");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -682,11 +672,9 @@ public class mainform extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jPanel23MouseClicked
 
-    private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
-        System.out.println(tempat);
-    }//GEN-LAST:event_jToggleButton1ActionPerformed
-
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+       tempatTersedia tem = new tempatTersedia(tempatParkir1);
+       tem.tersedia(tempatParkir1,1);
        Welkom1 home = new Welkom1();
        home.setVisible(true);
        home.setLocationRelativeTo(null);
@@ -729,7 +717,7 @@ public class mainform extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    public javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel14;
@@ -752,6 +740,5 @@ public class mainform extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
-    private javax.swing.JToggleButton jToggleButton1;
     // End of variables declaration//GEN-END:variables
 }

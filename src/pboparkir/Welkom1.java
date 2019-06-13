@@ -5,11 +5,16 @@
  */
 package pboparkir;
 import about_Us.AboutUs;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
 import tubespbo.mainform;
 import tubespbo.mainform2;
 import tubespbo.mainform3;
 import tubespbo.tabelPengunjung;
+import tubespbo.tempatTersedia;
 /**
  *
  * @author asus
@@ -19,11 +24,28 @@ public class Welkom1 extends javax.swing.JFrame {
     /**
      * Creates new form Welkom
      */
+    public DefaultTableModel tabel;
+    BufferedReader baca;
     public Welkom1() {
         initComponents();
         setLocationRelativeTo(null);
+        tabel=(DefaultTableModel)tabelParkirSisa.getModel();
+        bacaTxt();
     }
-
+    public void bacaTxt(){
+        String address ="src/dataPengunjung/ParkirTersisa.txt";
+        File file = new  File(address);
+        try {
+            baca = new BufferedReader(new FileReader(file));
+            Object[] dataBaris = baca.lines().toArray();
+            for(int i=0;i<dataBaris.length;i++){
+                String baris = dataBaris[i].toString();
+                String[] data = baris.split("/");
+                tabel.addRow(data);
+            }
+        } catch (Exception e) {
+        }
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -34,15 +56,12 @@ public class Welkom1 extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tabelParkirSisa = new javax.swing.JTable();
         jButton1 = new javax.swing.JButton();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
+        labelParkir1 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
         jButton5 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
@@ -56,6 +75,36 @@ public class Welkom1 extends javax.swing.JFrame {
 
         jPanel1.setLayout(null);
 
+        tabelParkirSisa.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        tabelParkirSisa.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        tabelParkirSisa.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Parkiran 1", "Pakiran 2", "Parkiran 3"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Integer.class, java.lang.Integer.class, java.lang.Integer.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane1.setViewportView(tabelParkirSisa);
+
+        jPanel1.add(jScrollPane1);
+        jScrollPane1.setBounds(300, 230, 260, 60);
+
         jButton1.setText(" Data Pengunjung");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -65,20 +114,10 @@ public class Welkom1 extends javax.swing.JFrame {
         jPanel1.add(jButton1);
         jButton1.setBounds(415, 383, 140, 30);
 
-        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel12.setText("-");
-        jPanel1.add(jLabel12);
-        jLabel12.setBounds(380, 320, 90, 30);
-
-        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel11.setText("-");
-        jPanel1.add(jLabel11);
-        jLabel11.setBounds(380, 240, 90, 30);
-
-        jLabel10.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel10.setText("-");
-        jPanel1.add(jLabel10);
-        jLabel10.setBounds(380, 172, 90, 30);
+        labelParkir1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        labelParkir1.setText("Tempat Tersedia");
+        jPanel1.add(labelParkir1);
+        labelParkir1.setBounds(380, 200, 110, 30);
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bismillahtubes/Bahan/mobilcilik.png"))); // NOI18N
         jLabel9.setText("jLabel2");
@@ -90,21 +129,6 @@ public class Welkom1 extends javax.swing.JFrame {
         jLabel1.setText("P   RKING");
         jPanel1.add(jLabel1);
         jLabel1.setBounds(20, 70, 440, 94);
-
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel2.setText("Tersisa : ");
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(290, 170, 120, 30);
-
-        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel6.setText("Tersisa : ");
-        jPanel1.add(jLabel6);
-        jLabel6.setBounds(290, 240, 120, 30);
-
-        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel8.setText("Tersisa : ");
-        jPanel1.add(jLabel8);
-        jLabel8.setBounds(290, 320, 120, 30);
 
         jButton5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton5.setText("Parkiran 3");
@@ -247,15 +271,12 @@ public class Welkom1 extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    public javax.swing.JLabel labelParkir1;
+    public javax.swing.JTable tabelParkirSisa;
     // End of variables declaration//GEN-END:variables
 }

@@ -17,7 +17,7 @@ public class mainform3 extends javax.swing.JFrame {
     String  kode;
     int index=0;
     public String alamat = "src/dataPengunjung/ParkingArea3.txt";
-    ArrayList<Referance> tempat = new ArrayList();
+    public ArrayList<Referance> tempatParkir3 = new ArrayList();
     
     public mainform3() {
         initComponents();
@@ -28,7 +28,7 @@ public class mainform3 extends javax.swing.JFrame {
         }
     }  
     public void parkingArea(){
-        tulisTxt save = new tulisTxt(tempat, alamat);
+        tulisTxt save = new tulisTxt(tempatParkir3, alamat);
         save.parkingArea();
     }
 
@@ -557,7 +557,9 @@ public class mainform3 extends javax.swing.JFrame {
     }//GEN-LAST:event_jPanel9MouseReleased
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        Welkom1 home = new Welkom1();
+       tempatTersedia tem = new tempatTersedia(tempatParkir3);
+       tem.tersedia(tempatParkir3,3);
+       Welkom1 home = new Welkom1();
        home.setVisible(true);
        home.setLocationRelativeTo(null);
        this.dispose();
@@ -597,7 +599,7 @@ public class mainform3 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    public javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel14;
