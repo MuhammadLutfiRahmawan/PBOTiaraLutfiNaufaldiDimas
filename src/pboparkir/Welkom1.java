@@ -13,6 +13,7 @@ import javax.swing.table.DefaultTableModel;
 import tubespbo.mainform;
 import tubespbo.mainform2;
 import tubespbo.mainform3;
+import tubespbo.masukData;
 import tubespbo.tabelPengunjung;
 import tubespbo.tempatTersedia;
 /**
@@ -222,10 +223,9 @@ public class Welkom1 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 //        String input = JOptionPane.showInputDialog("Password pengelola");
-        tabelPengunjung tabel = new tabelPengunjung();
-            tabel.setVisible(true);
-            tabel.setLocationRelativeTo(null);
-            this.dispose();
+            masukData masuk = new masukData();
+            masuk.setVisible(true);
+            masuk.setLocationRelativeTo(null);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

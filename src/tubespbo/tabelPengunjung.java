@@ -9,6 +9,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import javax.swing.table.DefaultTableModel;
+import pboparkir.Welkom1;
 
 /**
  *
@@ -98,14 +99,17 @@ public class tabelPengunjung extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel2 = new javax.swing.JPanel();
+        jButton2 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tabelPakir1 = new javax.swing.JTable();
         jLabel2 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
+        jButton3 = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         tabelParkir2 = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
+        jButton4 = new javax.swing.JButton();
         jScrollPane3 = new javax.swing.JScrollPane();
         tabelParkir3 = new javax.swing.JTable();
         jLabel3 = new javax.swing.JLabel();
@@ -114,6 +118,15 @@ public class tabelPengunjung extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(588, 432));
 
         jPanel2.setLayout(null);
+
+        jButton2.setText("HOME");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton2);
+        jButton2.setBounds(20, 370, 63, 23);
 
         tabelPakir1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -136,6 +149,15 @@ public class tabelPengunjung extends javax.swing.JFrame {
 
         jPanel3.setLayout(null);
 
+        jButton3.setText("HOME");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jButton3);
+        jButton3.setBounds(20, 370, 63, 23);
+
         tabelParkir2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -156,6 +178,15 @@ public class tabelPengunjung extends javax.swing.JFrame {
         jTabbedPane1.addTab("Parking Area 2", jPanel3);
 
         jPanel4.setLayout(null);
+
+        jButton4.setText("HOME");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        jPanel4.add(jButton4);
+        jButton4.setBounds(20, 370, 63, 23);
 
         tabelParkir3.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -201,6 +232,21 @@ public class tabelPengunjung extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        Welkom1 home = new Welkom1();
+        home.setVisible(true);
+        home.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -237,6 +283,9 @@ public class tabelPengunjung extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton jButton2;
+    public javax.swing.JButton jButton3;
+    public javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

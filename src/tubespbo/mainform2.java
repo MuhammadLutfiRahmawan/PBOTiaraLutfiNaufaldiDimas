@@ -1688,7 +1688,7 @@ public class mainform2 extends javax.swing.JFrame {
     public javax.swing.JPanel jPanel105;
     public javax.swing.JPanel jPanel106;
     public javax.swing.JPanel jPanel107;
-    private javax.swing.JPanel jPanel108;
+    public javax.swing.JPanel jPanel108;
     public javax.swing.JPanel jPanel109;
     private javax.swing.JPanel jPanel11;
     public javax.swing.JPanel jPanel110;
@@ -1757,7 +1757,7 @@ public class mainform2 extends javax.swing.JFrame {
     public javax.swing.JPanel jPanel84;
     public javax.swing.JPanel jPanel85;
     public javax.swing.JPanel jPanel86;
-    private javax.swing.JPanel jPanel87;
+    public javax.swing.JPanel jPanel87;
     public javax.swing.JPanel jPanel88;
     private javax.swing.JPanel jPanel9;
     // End of variables declaration//GEN-END:variables
